@@ -1,14 +1,26 @@
 /* main styles */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+section{
+    width: 100%;
+    position: relative;
+}
 
-
-
-
-
-
+:root{
+    --primaryColor: #219ebc;
+    --SecondayColor: #fb8500;
+}
 
 /*navbar styles*/
-
-
+.navbar{
+    height:4rem;
+    background-color: var(--primaryColor);
+}
 
 
 
