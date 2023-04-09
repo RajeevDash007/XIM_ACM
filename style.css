@@ -113,7 +113,7 @@ nav .menu{
     height:100%;
     text-align:center;
     font-family: var(--headingFont);
-    background-color: #caf0f8;
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 }
 .events_heading{
     padding: 10px;
