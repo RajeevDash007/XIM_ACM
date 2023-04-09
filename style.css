@@ -19,9 +19,9 @@ section{
 :root{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
-    --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif;
+    /* --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif; */
     --normalFont:'Poppins', sans-serif;
-    /* --headingFont:'Josefin Sans', sans-serif; */
+    --headingFont:'Josefin Sans', sans-serif;
 }
 
 
@@ -119,6 +119,10 @@ nav .menu{
     font-size:3rem;
     text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+}
+
+.events .starting_letter{
+    color: var(--secondayColor);
 }
 /* .events_heading h1:hover{
     color: var(--secondayColor);
