@@ -1,6 +1,7 @@
 /*FONT imports*/
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 /* main styles */
 html,
@@ -19,23 +20,21 @@ section{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
     --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif;
+    --normalFont:'Poppins', sans-serif;
     /* --headingFont:'Josefin Sans', sans-serif; */
 }
+
 
 /*navbar styles*/
 
 
-
-body{
-	background:#ecf0f3;
-}
-
 nav{
 	width: 100%;
-	padding:12px 0;
+	padding:2px 0;
 	background:#ecf0f3;
 	box-shadow: -3px -3px 7px #ffffff,
             3px 3px 5px #ceced1;
+            font-family: var(--normalFont);
 }
      
 
@@ -53,7 +52,7 @@ nav .menu{
 
 .menu .logo a{
 	font-size:28px;
-	dont-weight:600;
+	font-weight:600;
 	text-decoration:none;
 	color:#31344b;
 }
@@ -76,28 +75,23 @@ nav .menu{
 	box-shadow: -3px -3px 7px #ffffff,
             3px 3px 5px #ceced1;
 	position:relative;
-	transition: all 0.3s ease-out, transform 0.2s ease-out;
+	transition: color 0.2s ease-out, transform 0.2s ease-out;
        border-radius:10px 10px; 
 	
 }
 
-.menu ul a:hover:before{
-	content:' ';
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	box-shadow:inset -3px -3px 7px #ffffff,
-          inset 3px 3px 5px #ceced1;
-	 border-radius:10px 10px; 
-}
 
 .menu ul a:hover{
-	color:blue;
-      
+	color:var(--secondayColor);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1);
 }
 
+.menu ul a:focus{
+    outline: none;
+      transform: scale(0.95);
+      box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px 0 rgba(0,0,0,.1) inset, -4px -4px 10px rgba(255,255,255,1) inset;
+}
 
 
 
