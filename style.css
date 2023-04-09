@@ -113,13 +113,19 @@ nav .menu{
     height:100%;
     text-align:center;
     font-family: var(--headingFont);
+    background-color: #caf0f8;
 }
-
+.events_heading{
+    padding: 10px;
+}
 .events_heading h1{
     font-size:3rem;
     text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    
 }
+
+
 
 .events .starting_letter{
     color: var(--secondayColor);
