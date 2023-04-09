@@ -1,5 +1,6 @@
 /*FONT imports*/
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 /* main styles */
 html,
@@ -18,13 +19,11 @@ section{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
     --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif;
+    /* --headingFont:'Josefin Sans', sans-serif; */
 }
 
 /*navbar styles*/
-.navbar{
-    height:4rem;
-    background-color: var(--primaryColor);
-}
+
 
 
 
@@ -51,7 +50,12 @@ section{
 .events_heading h1{
     font-size:3rem;
     text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+/* .events_heading h1:hover{
+    color: var(--secondayColor);
+    transform: translate3d(0, -10px, 22px);
 }
 .events_heading .starting_letter{
     color:var(--secondayColor);
-}
+} */
