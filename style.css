@@ -17,6 +17,7 @@ section{
 :root{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
+    --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif;
 }
 
 /*navbar styles*/
@@ -44,7 +45,7 @@ section{
 .events{
     height:100%;
     text-align:center;
-    font-family: "LeagueGothic-Regular", "Oswald",sans-serif;
+    font-family: var(--headingFont);
 }
 
 .events_heading h1{
