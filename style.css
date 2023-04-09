@@ -1,3 +1,6 @@
+/*FONT imports*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
 /* main styles */
 html,
 body{
@@ -38,3 +41,16 @@ section{
 
 /* Events Styles */
 
+.events{
+    height:100%;
+    text-align:center;
+    font-family: "LeagueGothic-Regular", "Oswald",sans-serif;
+}
+
+.events_heading h1{
+    font-size:3rem;
+    text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.events_heading .starting_letter{
+    color:var(--secondayColor);
+}
