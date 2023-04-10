@@ -27,7 +27,7 @@ section{
     --secondayColor: #fb8500;
     --normalFont:'Poppins', sans-serif;
     --headingFont:'Josefin Sans', sans-serif;
-    --eventsBackground:linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    --eventsBackground: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 
     --team-first-color: /*hsl(29, 80%, 58%)*/#fb8500;
     --team-first-color-light: /* hsl(29,80%,70%) #fb8500*/#f3e4e4;
@@ -143,15 +143,6 @@ nav .menu{
 .events .starting_letter{
     color: var(--secondayColor);
 }
-
-/* .events_heading h1:hover{
-    color: var(--secondayColor);
-    transform: translate3d(0, -10px, 22px);
-}
-.events_heading .starting_letter{
-    color:var(--secondayColor);
-} */
-
 
 
 
