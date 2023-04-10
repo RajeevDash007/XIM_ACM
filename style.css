@@ -29,9 +29,9 @@ section{
     --headingFont:'Josefin Sans', sans-serif;
     --eventsBackground:linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 
-    --team-first-color: hsl(29, 80%, 58%);
-    --team-first-color-light: hsl(29,80%,70%);
-    --team-black-color: hsl(29 , 16% , 10%);
+    --team-first-color: /*hsl(29, 80%, 58%)*/#fb8500;
+    --team-first-color-light: /* hsl(29,80%,70%) #fb8500*/#f3e4e4;
+    --team-black-color:#044353 /*hsl(29 , 16% , 10%)*/;
     --team-text-color: hsl(29 , 8% , 65%);
     --team-body-color: hsl(29, 100%,99%);
 
@@ -162,6 +162,13 @@ nav .menu{
     background-color: var(--team-body-color);
     display: flex;
     padding-left: 3rem;
+    flex-wrap: wrap;
+    
+    
+}
+.team-box{
+    padding-left: 10rem;
+    display: flex;
 }
 
 a{
@@ -176,7 +183,7 @@ img{
     height: auto;
 }
 .team-container{
-    height:100vh;
+    height:60vh;
     margin-inline: 1.5rem;
     display: grid;
     place-items: center;
@@ -186,7 +193,7 @@ img{
 
 .team-card{
     position: relative;
-    width: 256px;
+    width: 226px;
     background-color: var(--team-black-color);
     padding: 1.25rem 2rem 3rem;
     border-radius: 1.5rem;
