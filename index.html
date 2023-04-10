@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./events.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
@@ -45,13 +46,76 @@
     <!-- about us ends -->
 
     <!-- events starts -->
-    <section class="events" id="events">
-        <div class="website_heading">
-            <h1><span class="starting_letter">E</span>VENTS</h1>
-        </div>
+        <section class="events" id="events">
+            <div class="website_heading">
+                <h1><span class="starting_letter">E</span>VENTS</h1>
+            </div>
+            <div class="events-slider">
+                <div class="events-slider__wrp swiper-wrapper">
+                  <div class="events-slider__item swiper-slide">
+                    <div class="events-slider__img">
+                      
+                      <img src="https://miro.medium.com/v2/resize:fit:1200/0*M4bxiCIjcTK-2Xr6.jpeg" alt="">
+                    </div>
+                    <div class="events-slider__content">
+                      <span class="events-slider__code">01 April 2022</span>
+                      <div class="events-slider__title">Web Development Bootcamp</div>
+                      <div class="events-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                      <a href="#" class="events-slider__button">click here</a>
+                    </div>
+                  </div>
+                  <div class="events-slider__item swiper-slide">
+                    <div class="events-slider__img">
+                      <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?w=2000" alt="">
+                    </div>
+                    <div class="events-slider__content">
+                      <span class="events-slider__code">02 April 2023</span>
+                      <div class="events-slider__title">App Development core</div>
+                      <div class="events-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                      <a href="#" class="events-slider__button">click here</a>
+                    </div>
+                  </div>
+                  
+                  <div class="events-slider__item swiper-slide">
+                    <div class="events-slider__img">
+                      <img src="https://www.techrepublic.com/wp-content/uploads/2022/10/cloud-computing-virtualization-770x433.jpeg" alt="">
+                    </div>
+                    <div class="events-slider__content">
+                      <span class="events-slider__code">03 April 2023</span>
+                      <div class="events-slider__title">Cloud Computing 2023</div>
+                      <div class="events-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                      <a href="#" class="events-slider__button">click here</a>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="events-slider__pagination"></div>
+              </div>
+
+              <div class="ball ball1"></div>
+                <div class="ball ball2"></div>
+                <div class="ball ball3"></div>
+        </section>
         
-    </section>
-    <script src="events.js"></script>
+        
+                    
+          <script>
+            var swiper = new Swiper('.events-slider', {
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                mousewheel: {
+                  invert: false,
+                },
+                // autoHeight: true,
+                pagination: {
+                  el: '.events-slider__pagination',
+                  clickable: true,
+                }
+              });
+            
+          </script>
+        <script src="./events.js"></script>
     <!-- events ends -->
 
     <!-- projects starts -->
