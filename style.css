@@ -165,7 +165,7 @@ nav label.bars{
 	display: block;
 } 
 #check:checked ~ .menuul{
-	lest:0;
+	left:0;
 }
 }
 
