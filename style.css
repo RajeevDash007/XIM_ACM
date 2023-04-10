@@ -160,7 +160,9 @@ nav label.cancel{
   }
   #check:checked ~ ul{
     left: 0;
+    
   }
+  
 }
 
 
