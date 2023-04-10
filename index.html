@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- navbar starts -->
-    <section class="navbar">
+    <section class="navbar" id="navbar">
         <nav>
             <div class="menu">
             <input type ="checkbox" id ="check">
@@ -34,13 +34,28 @@
                   <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
               </div>
               </nav>
+              <script>
+                window.onscroll = function() {myFunction()};
+
+                
+                    var navbar = document.getElementById("navbar");
+                    
+                    var sticky = navbar.offsetTop;
+
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+              </script>
     </section>
     <!-- navbar ends -->
 
     <!-- home starts -->
-    <section class="home" id="home">
-        home
-    </section>
+    
     <!-- home ends -->
 
      <!-- about us starts -->
