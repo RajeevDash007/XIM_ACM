@@ -40,6 +40,18 @@ section{
     --team-smaller-font-size: .75rem;
 }
 
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #404040;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right bottom, #fd8721, #c34915);
+}
+
 /*navbar styles*/
 
 
