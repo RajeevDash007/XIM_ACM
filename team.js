@@ -19,3 +19,8 @@ const showSocial = (toggleCard, socialCard) =>{
 }
 showSocial('team-toggle','team-social')
 showSocial('team1-toggle','team1-social')
+showSocial('team2-toggle','team2-social')
+showSocial('team3-toggle','team3-social')
+showSocial('team4-toggle','team4-social')
+showSocial('team5-toggle','team5-social')
+showSocial('team6-toggle','team6-social')

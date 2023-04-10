@@ -147,7 +147,7 @@ nav .menu{
 
 
 
-/*team section*/
+/*team styles*/
 #team-section{
     font-family: var(--team-body-font);
     background-color: var(--team-body-color);
@@ -174,7 +174,7 @@ img{
     height: auto;
 }
 .team-container{
-    height:60vh;
+    height:50vh;
     margin-inline: 1.5rem;
     display: grid;
     place-items: center;
