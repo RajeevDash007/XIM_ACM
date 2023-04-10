@@ -25,10 +25,9 @@ section{
 :root{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
-    /* --headingFont:"LeagueGothic-Regular", "Oswald",sans-serif; */
     --normalFont:'Poppins', sans-serif;
     --headingFont:'Josefin Sans', sans-serif;
-
+    --eventsBackground:linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 
     --team-first-color: hsl(29, 80%, 58%);
     --team-first-color-light: hsl(29,80%,70%);
@@ -127,25 +126,24 @@ nav .menu{
 
 .events{
     height:100%;
-    text-align:center;
     font-family: var(--headingFont);
-    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    background-image: var(--eventsBackground);
 }
-.events_heading{
-    padding: 50px;
+.website_heading{
+    padding: 30px;
+    text-align: center;
 }
-.events_heading h1{
+.website_heading h1{
     font-size:3rem;
     text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     
 }
 
-
-
 .events .starting_letter{
     color: var(--secondayColor);
 }
+
 /* .events_heading h1:hover{
     color: var(--secondayColor);
     transform: translate3d(0, -10px, 22px);
@@ -153,6 +151,10 @@ nav .menu{
 .events_heading .starting_letter{
     color:var(--secondayColor);
 } */
+
+
+
+
 
 /*team section*/
 #team-section{
@@ -181,6 +183,7 @@ img{
     margin-right: 3rem;
 
 }
+
 .team-card{
     position: relative;
     width: 256px;
