@@ -210,12 +210,13 @@ nav label.cancel{
 .website_heading{
     padding: 80px;
     text-align: center;
+    
 }
 .website_heading h1{
     font-size:3rem;
     text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    
+    font-family: var(--headingFont);
 }
 
 .starting_letter{
