@@ -108,6 +108,67 @@ nav .menu{
       box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px 0 rgba(0,0,0,.1) inset, -4px -4px 10px rgba(255,255,255,1) inset;
 }
 
+nav label.button{
+	color:#31344b;
+	font-size: 18 px;
+	cursor: pointer;
+}
+
+nav label.cancel{
+	position: absolute;
+	top: 25px;
+	right: 30px;
+}
+#check{
+	display:none;
+}
+
+@media (max-width:940px){
+   .menu ul{
+	display: block;
+	position: fixed;
+ 	top: 0;
+	left: 0;
+	width: 100%;
+	max-width:400px;
+	padding-top: 45px;
+	height: 100%;
+	background:#ecf0f3;
+	box-shadow: 0 5px 10px #b0b0b5;
+	z-index: 12;
+	transition: all 0.3s ease;
+}
+
+ .menu ul a{
+	display: block;
+	font-size: 23px;
+	width: 100%;
+	margin-top: 30px;
+	box-shadow: none;
+	text-align: center;
+}
+
+
+.menu ul a:hover{
+	box-shadow:none;
+}
+   
+nav label.bars{
+	display: block;
+}
+
+
+#check:checked ~ label.bars{
+	display: none;
+}
+#check:checked ~ ul label.cancel{
+	display: block;
+} 
+#check:checked ~ .menuul{
+	lest:0;
+}
+}
+
 
 
 /*home styles*/
