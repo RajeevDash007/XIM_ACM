@@ -76,8 +76,7 @@ nav .menu{
 	
 	
 }
-.sticky {
-  margin-bottom: 100px;
+/* .sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -85,7 +84,7 @@ nav .menu{
 
 .sticky + .home {
   padding-top: 60px;
-}
+} */
 .menu .logo a{
 	font-size:28px;
 	font-weight:600;
