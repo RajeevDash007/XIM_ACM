@@ -820,7 +820,7 @@ img{
    .contactus{
       height: 100%;
       width: 100%;
-      margin-left: 90px;
+      margin-left: 50px;
       /*margin-right: 60px;*/
       padding-left: 60px;
       text-align: center;
@@ -890,6 +890,7 @@ img{
       .contactus{
         padding-left: 10px;
         padding-right: 20px;
+        margin-left: 20px;
       }
       .contact-container{
         margin: 20px 0;
