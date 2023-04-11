@@ -68,7 +68,7 @@ nav{
             3px 3px 5px #ceced1;
   font-family: var(--normalFont);
   position: fixed;
-  z-index: 999;   
+            z-index: 999;   
 } 
      
 
@@ -501,10 +501,15 @@ nav label.cancel{
 #team-section{
     font-family: var(--team-body-font);
     background-color: var(--team-body-color);
-    display: flex;
+    /* display: flex;
     padding-left: 3rem;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; */
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    gap: 40px 40px;
     
 }
 .team-box{
