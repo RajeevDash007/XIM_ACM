@@ -15,6 +15,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 section{
     height: 100%;
@@ -57,6 +58,7 @@ section{
 .navbar{
   height: 100%;
   background-color:  transparent;
+  padding-bottom:80px;
 }
 nav{
 	width: 100%;
@@ -66,8 +68,8 @@ nav{
             3px 3px 5px #ceced1;
             font-family: var(--normalFont);
             position: fixed;
-            z-index: 999;
-}
+            z-index: 999;   
+} 
      
 
 nav .menu{
