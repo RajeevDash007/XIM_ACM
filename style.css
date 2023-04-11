@@ -902,4 +902,253 @@ img{
     height: 35px;
 }
   /* ------testimonial  close-------*/
+
+
+  /*----------Contact Us starts-----------*/
+
+  .contact-container{
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-container .contact-content .contact-left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .contact-content .contact-left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .contact-content .contact-left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .contact-content .contact-left-side .details i{
+    font-size: 30px;
+    color: var(--secondayColor);
+    margin-bottom: 10px;
+  }
+  .contact-content .contact-left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .contact-content .contact-left-side .details .text-one,
+  .contact-content .contact-left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .contact-container .contact-content .contact-right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .contact-content .contact-right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color:var(--primaryColor);
+  }
+  .contact-right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .contact-right-side .input-box input,
+  .contact-right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .contact-right-side .message-box{
+    min-height: 110px;
+  }
+  .contact-right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .contact-right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .contact-right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background:  var(--primaryColor);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: var(--primaryColor);
+  }
+  
+  @media (max-width: 950px) {
+    .contact-container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .contact-container .contact-content .contact-right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 800px) {
+    .contactus{
+      padding-left: 20px;
+      padding-right: 90px;
+    }
+    .contact-container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .contact-container .contact-content{
+      flex-direction: column-reverse;
+    }
+   .contact-container .contact-content .contact-left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .contact-container .contact-content .contact-left-side::before{
+     display: none;
+   }
+   .contact-container .contact-content .contact-right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  }
+  
+   .contactus{
+      height: 100%;
+      width: 100%;
+      margin-left: 90px;
+      /*margin-right: 60px;*/
+      padding-left: 60px;
+      text-align: center;
+      background: #dcf7f7;
+    }
+    
+    
+    .contactus{
+      height: 100%;
+      font-family: var(--headingFont);
+      background-image: var(--eventsBackground);
+      padding-bottom: 100px;
+    }
+    .website_heading{
+      padding: 80px;
+      text-align: center;
+      
+    }
+    .website_heading h1{
+      font-size:3rem;
+      text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      font-family: var(--headingFont);
+    }
+    
+    .starting_letter{
+      color: var(--secondayColor);
+    }
+  
+    .fa {
+      padding: 20px;
+      font-size: 20px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+      border-radius: 50%;
+      margin-top: 15px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: var(--secondayColor);
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: var(--secondayColor);
+      color: white;
+    }
+    .fa-instagram {
+      background:var(--secondayColor);
+      color: white;
+    }
+    
+    .contact-left-side .social-media{
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 10px ;
+    }
+    
+    @media (max-width: 480px) {
+      .contactus{
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      .contact-container{
+        margin: 20px 0;
+        height: 100%;
+      }
+      .contact-container .contact-content{
+        flex-direction: column-reverse;
+      }
+     .contact-container .contact-content .contact-left-side{
+       width: 100%;
+       flex-direction: row;
+       margin-top: 40px;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+     .contact-container .contact-content .contact-left-side::before{
+       display: none;
+     }
+     .contact-container .contact-content .contact-right-side{
+       width: 100%;
+       margin-left: 0;
+     }
+     .contactus .website_heading h1{
+        font-size:2rem;
+        text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        font-family: var(--headingFont);
+      
+     }
+    }
+
+  /*----------Contact Us Ends--------------*/
   
