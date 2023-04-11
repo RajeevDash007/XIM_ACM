@@ -66,9 +66,9 @@ nav{
 	background:#ecf0f3;
 	box-shadow: -3px -3px 7px #ffffff,
             3px 3px 5px #ceced1;
-            font-family: var(--normalFont);
-            position: fixed;
-            z-index: 999;   
+  font-family: var(--normalFont);
+  position: fixed;
+  z-index: 999;   
 } 
      
 
