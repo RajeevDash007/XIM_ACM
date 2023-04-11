@@ -498,6 +498,30 @@ nav label.cancel{
 
 /*team styles*/
 
+.team-head{
+  padding: 0.8rem 1rem 4rem 1rem;
+  text-align: center;
+  font-family: var(--team-body-font);
+  font-size: 2rem;
+  color: #f26316;
+
+}
+#team-section1{
+  font-family: var(--team-body-font);
+  background-color: var(--team-body-color);
+  display: flex;
+  padding-left: 3rem;
+  flex-wrap: wrap;
+}
+
+#team-section2{
+  font-family: var(--team-body-font);
+  background-color: var(--team-body-color);
+  display: flex;
+  padding-left: 3rem;
+  flex-wrap: wrap;
+}
+
 #team-section{
     font-family: var(--team-body-font);
     background-color: var(--team-body-color);
