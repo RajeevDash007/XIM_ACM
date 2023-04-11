@@ -54,7 +54,10 @@ section{
 
 /*navbar styles*/
 
-
+.navbar{
+  height: 100%;
+  background-color:  transparent;
+}
 nav{
 	width: 100%;
 	padding:15px 0;
@@ -62,6 +65,8 @@ nav{
 	box-shadow: -3px -3px 7px #ffffff,
             3px 3px 5px #ceced1;
             font-family: var(--normalFont);
+            position: fixed;
+            z-index: 999;
 }
      
 
@@ -71,20 +76,8 @@ nav .menu{
 	padding:0 20px;
 	display:flex;
 	justify-content:space-between;
-	align-items:center;
-      
-	
-	
+	align-items:center;	
 }
-/* .sticky {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
-.sticky + .home {
-  padding-top: 60px;
-} */
 .menu .logo a{
 	font-size:28px;
 	font-weight:600;
@@ -95,8 +88,7 @@ nav .menu{
 .menu ul{
 	list-style:none;
 	display:flex;
-       
-     
+ 
 }
 
 .menu ul a{
