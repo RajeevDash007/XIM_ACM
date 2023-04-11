@@ -833,6 +833,7 @@ img{
       font-family: var(--headingFont);
       background-image: var(--eventsBackground);
       padding-bottom: 100px;
+      font-family: "Poppins" , sans-serif;
     }
     .website_heading{
       padding: 80px;
