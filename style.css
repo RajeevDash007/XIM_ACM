@@ -696,9 +696,9 @@ img{
       transform: rotate(-1deg);
     }
   }
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:640px) {
     .team-container{
-      width:98%;
+      width:100%;
     }
     
   }
