@@ -512,6 +512,7 @@ nav label.cancel{
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #team-section2{
@@ -520,6 +521,7 @@ nav label.cancel{
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
+  justify-content:center ;
 }
 #team-section3{
   font-family: var(--team-body-font);
@@ -527,6 +529,7 @@ nav label.cancel{
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #team-section{
@@ -535,6 +538,7 @@ nav label.cancel{
     display: flex;
     padding-left: 3rem;
     flex-wrap: wrap;
+    justify-content: center;
     
     
 }
