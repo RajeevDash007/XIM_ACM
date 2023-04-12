@@ -521,6 +521,13 @@ nav label.cancel{
   padding-left: 3rem;
   flex-wrap: wrap;
 }
+#team-section3{
+  font-family: var(--team-body-font);
+  background-color: var(--team-body-color);
+  display: flex;
+  padding-left: 3rem;
+  flex-wrap: wrap;
+}
 
 #team-section{
     font-family: var(--team-body-font);
@@ -688,6 +695,12 @@ img{
     88% {
       transform: rotate(-1deg);
     }
+  }
+  @media screen and (max-width:600px) {
+    .team-container{
+      width:98%;
+    }
+    
   }
   
 
