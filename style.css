@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto+Slab:wght@100;200;400;700&display=swap");
+
 /* main styles */
 *{
     box-sizing: border-box;
@@ -189,6 +191,224 @@ nav label.cancel{
 
 /* About Us Styles */
 
+.main-about-content-title{
+  font-family: "Playfair Display", serif;
+  background-color: white;
+  display: flex;
+  color: blue;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.main-article{
+  font-family: "Roboto Slab", serif;
+  font-size: 110%;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.main-about-content-article.about-acm-box{
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: white;
+  padding-left: 2rem;
+  width: 200%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(-45deg, rgba(4, 72, 210, 0.932), rgba(2, 10, 239, 0.25));
+}
+
+/* ACM card starts here */
+.main-image{
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem; 
+  
+}
+/* ACM card ends here */
+
+/* Content part starts here */
+.about-content {
+  margin-top: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-style: solid 0.7rem;
+  
+}
+
+.about-content-title{
+  font-family: "Playfair Display", serif;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+.about-quote {
+  font-family: "Alkatra", cursive;
+  font-weight: bold;
+  font-size: 90%;
+  color: red;
+  padding-top: 0.1rem;
+  padding-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us{
+  font-family: 'Roboto Slab', serif;
+  font-size: large;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: white;
+}
+
+
+.about-acm-box {
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 90%;
+  height: 42%;
+  border-radius: 50px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(-45deg, rgba(4, 72, 210, 0.932), rgba(2, 10, 239, 0.25));
+}
+
+/* Cards CSS */
+
+/* Float three columns side by side */
+.about-column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.about-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.about-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) { 
+  .about-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.about-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius:10px;
+  cursor:pointer;
+}
+.back.about-from-left.h2{
+  color: white;
+}
+.about-card .about-profile{
+   border-radius:10px;
+   transition: 0.2s;
+}
+.about-card:hover .about-profile{
+  transform:scale(1.4);
+  border-top-right-radius:50px;
+  border-top-left-radius:50px;
+}
+
+.about-card .about-card-content{
+  width:100%;
+  height:100%;
+  background-color: white;
+  position:relative;
+  overflow:hidden;
+}
+.about-card .about-card-content .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color: rgb(103, 103, 245);
+  transition:1s;
+  
+  z-index:1;
+  padding:10px;
+}
+
+.about-from-left{
+  top:0;
+  left:-100%;
+}
+.about-from-left h2{
+  background-color: white;
+}
+.about-from-left h3{
+  background-color: white;
+}
+.about-card:hover .about-card-content .about-from-left {
+   left:0%;
+}
+
+.about-from-bottom{
+  top:100%;
+  left:0;
+}
+.about-from-bottom h2{
+  background-color: white;
+}
+.about-from-bottom h3{
+  background-color: white;
+}
+
+.about-card:hover .about-card-content .about-from-bottom {
+   top:0%;
+}
+
+.about-from-right{
+  top:0%;
+  right:-100%;
+}
+.about-from-right h2{
+  background-color: white;
+}
+.about-from-right h3{
+  background-color: white;
+}
+.about-card:hover .about-card-content .about-from-right {
+   right:0;
+}
+
+.about-card .about-card-content .back h3{
+  font-size:15px;
+  letter-spacing:2px;
+}
+
+.about-card .about-card-content .back .about-des{
+  font-family: "Alkatra", cursive;
+  background-color: white;
+  font-size: 110%;
+  padding: 1rem 0.5rem;
+}
+/* About Us style ends */
 
 
 
