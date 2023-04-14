@@ -227,7 +227,7 @@ nav label.cancel{
 .main-image{
   width: 100%;
   height: auto;
-  padding: 2rem 0;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +292,7 @@ nav label.cancel{
 .about-column {
   float: left;
   width: 33.33%;
-  padding: 0 10px;
+  padding: 50px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -405,7 +405,7 @@ nav label.cancel{
 .about-card .about-card-content .back .about-des{
   font-family: "Alkatra", cursive;
   background-color: white;
-  font-size: 110%;
+  font-size: 80%;
   padding: 1rem 0.5rem;
 }
 /* About Us style ends */
