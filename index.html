@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./events.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ACM XIM</title>
+    
 </head>
 <body>
     
@@ -66,11 +67,11 @@
 
      <!-- about us starts -->
      
-    <section class="main-about" id="about-us">
+    <section class="main-about" id="about-us" data-aos="zoom-out-left" data-aos-delay="10" data-aos-duration="1000">
         <div class="website_heading" id="aboutus">
             <h1><span class="starting_letter">A</span>BOUT <span class="starting_letter">U</span>S</h1>
         </div>
-        <section class="about-container">
+        <section class="about-container" >
           <section class="main-about-content">
             <section class="main-about-content-article">
               <section class="main-image">
@@ -238,7 +239,7 @@
             <div class="website_heading">
                 <h1><span class="starting_letter">E</span>VENTS</h1>
             </div>
-            <div class="events-slider">
+            <div class="events-slider" data-aos="zoom-in-up" data-aos-delay="10" data-aos-duration="1000">
                 <div class="events-slider__wrp swiper-wrapper">
                   <div class="events-slider__item swiper-slide">
                     <div class="events-slider__img">
@@ -310,7 +311,7 @@
     <div class="website_heading" id="projects">
         <h1><span class="starting_letter">P</span>ROJECTS</h1>
     </div>
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" data-aos="zoom-out-up" data-aos-delay="10" data-aos-duration="1000">
        <ul class="projects_filter">
             <li class="projects_list projects_filter_active" data-filter="all">ALL</li>
             <li class="projects_list" data-filter="app">APP DEV</li>
@@ -386,7 +387,7 @@
         <h3 class="team-head">FACULTY AND CORE MEMBERS</h3>
     </div>
 
-    <section class="team" id="team-section">
+    <section class="team" id="team-section" data-aos="slide-left" data-aos-delay="10" data-aos-duration="1000">
         <div class="team-container">
             <div class="team-card">
                 <div class="team--border">
@@ -538,7 +539,7 @@
     <div>
         <h3 class="team-head" style="margin-top: 4rem;">WEB DEVELOPMENT TEAM</h3>
     </div>
-    <section class="team" id="team-section1">
+    <section class="team" id="team-section1" data-aos="slide-right" data-aos-delay="10" data-aos-duration="1000">
         <div class="team-container">
             <div class="team-card">
                 <div class="team--border">
@@ -759,7 +760,7 @@
         <div>
             <h3 class="team-head" style="margin-top: 4rem;">SOCIAL MEDIA TEAM</h3>
         </div>
-        <section class="team" id="team-section2">
+        <section class="team" id="team-section2" data-aos="slide-left" data-aos-delay="10" data-aos-duration="1000">
         <div class="team-container">
             <div class="team-card">
                 <div class="team--border">
@@ -909,7 +910,7 @@
         <div>
             <h3 class="team-head" style="margin-top: 4rem;">GRAPHICS TEAM</h3>
         </div>
-        <section class="team" id="team-section3">
+        <section class="team" id="team-section3" data-aos="slide-right" data-aos-delay="10" data-aos-duration="1000">
         <div class="team-container">
             <div class="team-card">
                 <div class="team--border">
@@ -1082,7 +1083,7 @@
         <div class="website_heading">
               <h1><span class="starting_letter">C</span>ONTACT US</h1>
         </div>
-        <section class="contactus" id="contactus">
+        <section class="contactus" id="contactus" data-aos="flip-right" data-aos-delay="10" data-aos-duration="1000">
             <div class="contact-container">
                 <div class="contact-content">
                     <div class="contact-left-side">
@@ -1163,6 +1164,11 @@
 
     <!-- footer ends -->
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+      });
+    </script>
 </body>
 </html>
