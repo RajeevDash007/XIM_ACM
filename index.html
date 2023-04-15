@@ -296,16 +296,67 @@
     </div>
     <section class="projects" id="projects">
        <ul class="projects_filter">
-            <li class="projects_list projects_filter_active">ALL</li>
-            <li class="projects_list">WEB DEV</li>
-            <li class="projects_list">APP DEV</li>
-            <li class="projects_list">AI & ML</li>
-            <li class="projects_list">DATA SCIENCE</li>
+            <li class="projects_list projects_filter_active" data-filter="all">ALL</li>
+            <li class="projects_list" data-filter="web">WEB DEV</li>
+            <li class="projects_list" data-filter="app">APP DEV</li>
+            <li class="projects_list" data-filter="ai">AI & ML</li>
+            <li class="projects_list" data-filter="ds">DATA SCIENCE</li>
        </ul>
+
+       <div class="projects_container">
+            <a href="" class="projects_box web">
+                <img src="https://f.hubspotusercontent40.net/hubfs/6062099/agency.png" alt="">
+            </a>
+
+            <a href="" class="projects_box web">
+                <img src="https://i.ytimg.com/vi/4y-_3Ayiauw/maxresdefault.jpg" alt="">
+            </a>
+
+            <a href="" class="projects_box web">
+                <img src="https://webguidelk.files.wordpress.com/2014/10/main-screen1.png" alt="">
+            </a>
+
+            <a href="" class="projects_box app">
+                <img src="https://pixelplex.io/wp-content/uploads/2021/09/ios-vs-android-app-development-meta.png" alt="">
+            </a>
+
+            <a href="" class="projects_box app">
+                <img src="https://images.yourstory.com/cs/1/b3ca8698ab5e11e88691f70342131e20/Android-Application-Development-benefits-1592388429316.jpg" alt="">
+            </a>
+
+            <a href="" class="projects_box ai">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Machine_Learning_Projects.jpg" alt="">
+            </a>
+
+            <a href="" class="projects_box ai">
+                <img src="https://daxg39y63pxwu.cloudfront.net/images/blog/artificial-intelligence-project-ideas/image_59320476021652189617421.png" alt="">
+            </a>
+
+            <a href="" class="projects_box ds">
+                <img src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/01/top-10-DS-projects.png" alt="">
+            </a>
+
+            <a href="" class="projects_box ds">
+                <img src="https://cdn.elearningindustry.com/wp-content/uploads/2019/07/learn-how-you-can-dive-into-data-science-today.jpg" alt="">
+            </a>
+       </div>
     </section>
     <script type="text/javascript">
         $(document).on('click','.projects_filter li',function(){
             $(this).addClass('projects_filter_active').siblings().removeClass('projects_filter_active');
+        });
+
+        $(document).ready(function(){
+            $('.projects_list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.projects_box').show('1000');
+                }
+                else{
+                    $('.projects_box').not('.'+value).hide('1000');
+                    $('.projects_box').filter('.'+value).show('1000');
+                }
+            });
         });
     </script>
     <!-- projects ends -->
