@@ -35,6 +35,28 @@
                       <li><a href="#testimonials">Testimonials</a></li>
                       <li><a href="#contactus">Contact Us</a></li>
                   </ul>
+
+                    <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball" style=" background-color: #fff;
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    left: 2px;
+                    top: 2px;
+                    border-radius: 50%;
+                    transition: transform 0.2s linear;"></span>
+                    </label>
+                    </div>
+                    <script>
+                        const checkbox = document.getElementById("checkbox")
+                            checkbox.addEventListener("change", () => {
+                            document.body.classList.toggle("dark")
+                        })
+                    </script>
                   <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
               </div>
               </nav>

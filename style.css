@@ -18,11 +18,79 @@ body{
   padding: 0;
   overflow-x: hidden !important;
   scroll-behavior: smooth;
+  transition: background 0.2s linear;
 }
 section{
     height: 100%;
     width: 100%;
     position: relative;
+}
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+body.dark .events-slider__code{
+  color:#b1b0b0;
+}
+body.dark .events-slider__title {
+  color:white;
+}
+ body.dark .events-slider__text{
+  color:rgb(230, 227, 227);
+ }
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+
+
+
+
+
+
+/*  Support me if you like it */
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
 }
 
 :root{
@@ -788,7 +856,7 @@ ul{
 }
 #team-section1{
   font-family: var(--team-body-font);
-  background-color: var(--team-body-color);
+  
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
@@ -797,7 +865,7 @@ ul{
 
 #team-section2{
   font-family: var(--team-body-font);
-  background-color: var(--team-body-color);
+  
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
@@ -805,7 +873,7 @@ ul{
 }
 #team-section3{
   font-family: var(--team-body-font);
-  background-color: var(--team-body-color);
+
   display: flex;
   padding-left: 3rem;
   flex-wrap: wrap;
@@ -814,7 +882,7 @@ ul{
 
 #team-section{
     font-family: var(--team-body-font);
-    background-color: var(--team-body-color);
+   
     display: flex;
     padding-left: 3rem;
     flex-wrap: wrap;
@@ -998,11 +1066,12 @@ img{
   /*----------Contact Us starts-----------*/
 
   .contact-container{
-    width: 85%;
-    background: #fff;
+    
+   max-width: 85%;
     border-radius: 6px;
     padding: 20px 60px 30px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
   }
   .contact-container .contact-content{
     display: flex;
@@ -1145,7 +1214,7 @@ img{
       /*margin-right: 60px;*/
       padding-left: 60px;
       text-align: center;
-      background: white;
+      
     }
     
     
