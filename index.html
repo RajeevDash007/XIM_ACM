@@ -294,9 +294,20 @@
     <div class="website_heading" id="projects">
         <h1><span class="starting_letter">P</span>ROJECTS</h1>
     </div>
-    <section class="projects" >
-       
+    <section class="projects" id="projects">
+       <ul class="projects_filter">
+            <li class="projects_list projects_filter_active">ALL</li>
+            <li class="projects_list">WEB DEV</li>
+            <li class="projects_list">APP DEV</li>
+            <li class="projects_list">AI & ML</li>
+            <li class="projects_list">DATA SCIENCE</li>
+       </ul>
     </section>
+    <script type="text/javascript">
+        $(document).on('click','.projects_filter li',function(){
+            $(this).addClass('projects_filter_active').siblings().removeClass('projects_filter_active');
+        });
+    </script>
     <!-- projects ends -->
 
 
@@ -464,7 +475,7 @@
         <div class="team-container">
             <div class="team-card">
                 <div class="team--border">
-                    <img class="team--img" alt="card image" src=".">
+                    <img class="team--img" alt="card image" src="https://i.ibb.co/T03f22M/1677207363364-jpg-200-200.png">
                 </div>
 
                 <h3 class="team--name">Rajeev</h3>
