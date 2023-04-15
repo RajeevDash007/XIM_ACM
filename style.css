@@ -68,31 +68,6 @@ body.dark .events-slider__title {
 
 
 
-
-
-
-
-
-
-/*  Support me if you like it */
-.support {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-}
-
-.support a {
-  color: #292c35;
-  font-size: 32px;
-  backface-visibility: hidden;
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.support a:hover{
-  transform: scale(1.1);
-}
-
 :root{
     --primaryColor: #219ebc;
     --secondayColor: #fb8500;
@@ -122,6 +97,9 @@ body.dark .events-slider__title {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to right bottom, #fd8721, #c34915);
 }
+
+/* preloader */
+
 
 /*navbar styles*/
 
@@ -258,12 +236,14 @@ nav label.cancel{
 
 
 /* About Us Styles */
-
+.main-about{
+  font-family: main-article;
+}
 .main-about-content-title{
-  font-family: "Playfair Display", serif;
+
   background-color: white;
   display: flex;
-  color: blue;
+  color: var(--primaryColor);
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
@@ -274,7 +254,13 @@ nav label.cancel{
   padding: 1rem 2rem;
   background-color: white;
 }
+@media screen and (max-width: 700px){
+  .main-article{
+    font-size: 70%;
+    padding: 5px;
+  }
 
+}
 .main-about-content-article.about-acm-box{
   margin: 0 auto;
   padding: 1.5rem;
@@ -285,7 +271,7 @@ nav label.cancel{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   background: linear-gradient(-45deg, rgba(4, 72, 210, 0.932), rgba(2, 10, 239, 0.25));
@@ -311,10 +297,19 @@ nav label.cancel{
   padding-bottom: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
-  border-style: solid 0.7rem;
+  border-style: solid 0.3rem;
   
 }
-
+@media screen and (max-width: 700px){
+  .about-us p{
+    font-size: 75%;
+    margin:-10px;
+  }
+  .about-body-contents .about-acm-box{
+    width: 110%;
+    margin:-15px;
+  }
+}
 .about-content-title{
   font-family: "Playfair Display", serif;
   font-size: 200%;
@@ -345,10 +340,10 @@ nav label.cancel{
 
 .about-acm-box {
   margin: 0 auto;
-  padding: 1.5rem;
-  width: 90%;
+  padding: 1rem;
+  width: 95%;
   height: 42%;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   background: linear-gradient(-45deg, rgba(4, 72, 210, 0.932), rgba(2, 10, 239, 0.25));
