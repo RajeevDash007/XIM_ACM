@@ -12,6 +12,8 @@
     padding: 0;
 }
 
+
+/* pre loader style starts */
 .loading{
   background-color: var(--bg);
 	color: var(--fg);
@@ -137,7 +139,7 @@
 		stroke-dashoffset: -351.86;
 	}
 }
-
+ /* preloader style ends */
 
 html,
 body{
@@ -153,6 +155,7 @@ section{
     position: relative;
 }
 
+/* dark theme toogle */
 body.dark {background-color: #292c35;} /* #9b59b6 */
 
 body.dark h1, body.dark .support a {color: #fff;}
