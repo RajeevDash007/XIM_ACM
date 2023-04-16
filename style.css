@@ -263,11 +263,9 @@ nav .menu{
 	justify-content:space-between;
 	align-items:center;	
 }
-.menu .logo a{
-	font-size:28px;
-	font-weight:600;
-	text-decoration:none;
-	color:#31344b;
+.menu .logo {
+  padding: -20px;
+  margin: -20px;
 }
 
 .menu ul{
