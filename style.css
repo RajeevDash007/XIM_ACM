@@ -370,8 +370,6 @@ nav label.cancel{
 /*home styles*/
 
 
-
-
 /* About Us Styles */
 .main-about{
   font-family: main-article;
@@ -815,6 +813,7 @@ nav label.cancel{
     color: #4e4a67;
     margin-bottom: 30px;
     line-height: 1.5em;
+    font-size: 80%;
   }
   .events-slider__button {
     display: inline-flex;
@@ -868,6 +867,9 @@ nav label.cancel{
     .events-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
       margin: 0 5px;
     }
+    .events{
+      margin-bottom: -250px;
+    }
   }
   .events-slider__pagination .swiper-pagination-bullet {
     width: 11px;
@@ -913,6 +915,18 @@ nav label.cancel{
     height: 240px;
     width: 240px;
     background: linear-gradient(90deg,#00ffd9,#00ff84);
+  }
+
+  @media screen and (max-width: 700px){
+    .ball1{
+      display: none;
+    }
+    .ball2{
+      display: none;
+    }
+    .ball3{
+      display: none;
+    }
   }
 /*projects styles*/
 
