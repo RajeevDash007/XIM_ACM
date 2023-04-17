@@ -368,7 +368,210 @@ nav label.cancel{
 
 
 /*home styles*/
+.home_background{
+  height: 650px;
+  /* background: rgb(102,22,155);
+  background: linear-gradient(90deg, rgba(102,22,155,1) 0%, rgba(33,49,153,1) 66%, rgba(0,38,119,1) 97%); */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    animation: animate 32s ease-in-out infinite;
+}
 
+@keyframes animate{
+  0%,100%{
+    background-image: url(https://i.ibb.co/tCLNk38/IMG-4547.jpg);
+  }
+  25%{
+    background-image: url(https://i.ibb.co/vHpjBpf/IMG-9191.jpg);
+  }
+  50%{
+    background-image: url(https://i.ibb.co/x2bYsh6/IMG-4557.jpg);
+  }
+  75%{
+    background-image: url(https://i.ibb.co/nbpZ1dr/IMG-9220.jpg);
+  }
+}
+
+
+svg {
+    font-family: 'Russo One', sans-serif;
+    position: absolute; 
+  margin-top: -5%;
+}
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s linear alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 140px;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+    80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+    100% {
+        fill: rgba(72,138,204,1); stroke: rgb(15, 79, 183); 
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+
+#cardWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+}
+
+.cardContent{
+  position: absolute;
+  height: 250px;
+  width: 400px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 100px 0 30px 50px;
+}
+.content{
+  font-family: arial;
+  color: rgba(255,255,255, 0.5);
+}
+
+
+.card_logo{
+  padding-top:140px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px){
+  #cardWrap{
+    width: 92%;
+    
+  }
+  .card_logo img{
+    margin-top: -20px;
+  }
+  svg{
+    margin-top: 5px;
+  }
+  svg text{
+    font-size: 200px;
+    
+  }
+ 
+}
+.home_social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  
+}
+
+.home_social-media a {
+  display: flex;
+  background-color: #e3edf7;
+  height: 50px;
+  width: 50px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
+}
+
+.home_social-media a i {
+  font-size: 30px;
+  background-color: #e3edf7;
+  color: #777;
+  transition: transform 0.5s;
+  
+}
+
+.home_social-media a:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+}
+
+a:hover i {
+  transform: scale(0.9);
+}
+
+a:hover .fa-facebook {
+  color: #3b5998;
+}
+
+a:hover .fa-twitter {
+  color: #00acee;
+}
+
+a:hover .fa-github {
+  color: #000000;
+}
+
+a:hover .fa-instagram {
+  color: #f14843;
+}
+
+a:hover .fa-linkedin-in {
+  color: #3b5998;
+}
+
+@media screen and (max-width: 700px){
+
+  .home_social-media{
+    
+  }
+  .home_social-media a{
+    height: 40px;
+    width: 40px;
+  }
+
+  .home_social-media a i {
+    font-size: 20px;
+  }
+}
+/* frosted glass effect */
+.card {
+  /* height: 520px;
+  width: 1100px; */
+  height:500px;
+  width: 1000px;
+  background: rgb(255,255,255);
+  background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px outset rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2); 
+  
+}
+
+/* grain/noise effect */
+.card::after {
+  content:"";
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  border-radius: 30px;
+  opacity: 0.5;
+ 
+}
 
 /* About Us Styles */
 .main-about{
