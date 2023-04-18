@@ -269,8 +269,8 @@ nav .menu{
 	align-items:center;	
 }
 .menu .logo {
-  padding: -20px;
-  margin: -20px;
+  padding: -30px;
+  margin: -30px;
 }
 
 .menu ul{
@@ -368,34 +368,7 @@ nav label.cancel{
 
 
 /*home styles*/
-.home_background{
-  height: 650px;
-  /* background: rgb(102,22,155);
-  background: linear-gradient(90deg, rgba(102,22,155,1) 0%, rgba(33,49,153,1) 66%, rgba(0,38,119,1) 97%); */
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    animation: animate 32s ease-in-out infinite;
-}
 
-@keyframes animate{
-  0%,100%{
-    background-image: url(https://i.ibb.co/tCLNk38/IMG-4547.jpg);
-  }
-  25%{
-    background-image: url(https://i.ibb.co/vHpjBpf/IMG-9191.jpg);
-  }
-  50%{
-    background-image: url(https://i.ibb.co/x2bYsh6/IMG-4557.jpg);
-  }
-  75%{
-    background-image: url(https://i.ibb.co/nbpZ1dr/IMG-9220.jpg);
-  }
-}
 
 
 svg {
@@ -445,10 +418,11 @@ svg text {
 
 
 .card_logo{
-  padding-top:140px;
+  padding-top:110px;
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width: 700px){

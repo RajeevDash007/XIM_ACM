@@ -17,7 +17,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ACM XIM</title>
+    <link rel="preload" href="https://i.ibb.co/tCLNk38/IMG-4547.jpg" as="image">
+    <link rel="preload" href="https://i.ibb.co/vHpjBpf/IMG-9191.jpg" as="image">
+    <link rel="preload" href="https://i.ibb.co/x2bYsh6/IMG-4557.jpg" as="image">
+    <link rel="preload" href="https://i.ibb.co/nbpZ1dr/IMG-9220.jpg" as="image">
+    <style>
+    .home_background {
+      height: 650px;
+      /* background: rgb(102,22,155);
+      background: linear-gradient(90deg, rgba(102,22,155,1) 0%, rgba(33,49,153,1) 66%, rgba(0,38,119,1) 97%); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      margin-top: -10px;
+      animation: animate 32s ease-in-out infinite;
+    }
     
+    @keyframes animate{
+      0%,100%{
+        background-image: url(https://i.ibb.co/tCLNk38/IMG-4547.jpg);
+      }
+      25%{
+        background-image: url(https://i.ibb.co/vHpjBpf/IMG-9191.jpg);
+      }
+      50%{
+        background-image: url(https://i.ibb.co/x2bYsh6/IMG-4557.jpg);
+      }
+      75%{
+        background-image: url(https://i.ibb.co/nbpZ1dr/IMG-9220.jpg);
+      }
+    }
+  </style>
 </head>
 <body onload="loadingFunction()">
     <!-- pre loader starts -->
@@ -62,7 +94,7 @@
             <div class="menu" >
             <input type ="checkbox" id ="check">
 
-               <div class="logo "><a href="./index.html"><img src="https://i.ibb.co/3RpgnwS/Logo.png" alt="" style="width:70px;"></a></div>
+               <div class="logo "><a href="./index.html"><img src="https://i.ibb.co/C223gtH/Official-Logo.png" alt="" style="width:80px;"></a></div>
                   <ul>
                     <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
                       <li><a href="#home">Home</a></li>
@@ -107,15 +139,15 @@
                             </text>
                         </svg>	
                         <div class="card_logo">
-                        <img src="https://i.ibb.co/3RpgnwS/Logo.png" alt="" width="220" >   
+                        <img src="https://i.ibb.co/C223gtH/Official-Logo.png" alt="" width="280" >   
                         </div>
         
                             <div class="home_social-media">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href=" https://facebook.com/ximacm" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://twitter.com/XIM_ACM" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                                <a href="https://www.instagram.com/xim_acm/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/xim-acm" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                   </div>
                      
@@ -440,6 +472,7 @@
                 if(value == 'all'){
                     $('.projects_box').show('1000');
                 }
+
                 else{
                     $('.projects_box').not('.'+value).hide('1000');
                     $('.projects_box').filter('.'+value).show('1000');
