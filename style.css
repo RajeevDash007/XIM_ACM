@@ -1618,6 +1618,10 @@ img{
       background:var(--secondayColor);
       color: white;
     }
+    .fa-linkedin {
+      background:var(--secondayColor);
+      color: white;
+    }
     
     .contact-left-side .social-media{
       text-align: center;
