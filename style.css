@@ -1526,7 +1526,8 @@ img{
   @media (max-width: 950px) {
     .contact-container{
       width: 90%;
-      padding: 30px 40px 40px 35px ;
+      padding: 30px 40px 40px 55px ;
+      margin-left: 10px;
     }
     .contact-container .contact-content .contact-right-side{
      width: 75%;
@@ -1536,10 +1537,10 @@ img{
   @media (max-width: 800px) {
     .contactus{
       padding-left: 20px;
-      padding-right: 90px;
+      padding-right: 50px;
     }
     .contact-container{
-      margin: 40px 0;
+      margin: 20px 0;
       height: 100%;
     }
     .contact-container .contact-content{
@@ -1638,7 +1639,7 @@ img{
       .contactus{
         padding-left: 10px;
         padding-right: 20px;
-        margin-left: 20px;
+        margin-left: 40px;
       }
       .contact-container{
         margin: 20px 0;
