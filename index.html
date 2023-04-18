@@ -123,6 +123,16 @@
                   <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
               </div>
               </nav>
+              <script>
+                const menuItems = document.querySelectorAll('.menu ul a');
+
+                menuItems.forEach((item) => {
+                  item.addEventListener('click', () => {
+                    const checkbox = document.getElementById('check');
+                    checkbox.checked = false;
+                  });
+                });
+            </script>
     </section>
     <!-- navbar ends -->
 

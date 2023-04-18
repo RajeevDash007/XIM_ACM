@@ -365,6 +365,37 @@ nav label.cancel{
   
 }
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 100%;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .navbar-nav li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust the margin-left property for the "About Us" section */
+  #about {
+    margin-left: 10px;
+  }
+}
+
 
 
 /*home styles*/
