@@ -139,6 +139,8 @@
 		stroke-dashoffset: -351.86;
 	}
 }
+
+
  /* preloader style ends */
 
 html,
@@ -148,6 +150,7 @@ body{
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   transition: background 0.2s linear;
+  
 }
 section{
     height: 100%;
