@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <title>ACM XIM</title>
     <link rel = "icon" href = "./favicon-32x32.png"type = "image/x-icon"> 
     <link rel="preload" href="https://i.ibb.co/tCLNk38/IMG-4547.jpg" as="image">
@@ -1177,7 +1178,77 @@
     <div class="testimonial_heading website_heading" id="testimonials">
         <h1 class="testimonial_heading" style="font-size: 2.5rem;"><span class="starting_letter">T</span>ESTIMONIALS</h1>
     </div>
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="row">
+            
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="https://cdn.dribbble.com/users/2199928/screenshots/11532918/media/5a7273b592ea860e6d0ff2931ecab4f3.png?compress=1&resize=400x300">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eum excepturi incidunt
+                                laudantium nesciunt omnis, provident repudiandae rerum sed! Amet blanditiis eaque eu!
+                            </p>
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Kelli</a>
+                            <small>- Faculty</small>
+                        </h3>
+                    </div>
     
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="https://www.shutterstock.com/image-vector/abstract-boy-avtar-character-fiction-260nw-2168632503.jpg">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eum excepturi incidunt
+                                laudantium nesciunt omnis, provident repudiandae rerum sed! Amet blanditiis eaque eu
+                            </p>
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Peter</a>
+                            <small>- Dean</small>
+                        </h3>
+                    </div>
+    
+                    <div class="testimonial">
+                        <div class="pic">
+                            <img src="https://cdn.dribbble.com/users/1824846/screenshots/5087861/media/a7439a172c259ee54e6187290692022e.png?compress=1&resize=768x576&vertical=top">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eum excepturi incidunt
+                                laudantium nesciunt omnis, provident repudiandae rerum sed! Amet blanditiis eaque eum
+                                odit repellendus!
+                            </p>
+                        </div>
+                        <h3 class="testimonial-title">
+                            <a href="#">Sally</a>
+                            <small>- Faculty</small>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#testimonial-slider').owlCarousel({
+                items:1,
+                itemsDesktop:[1000,1],
+                itemsDesktopSmall:[979,1],
+                itemsTablet:[768,1],
+                pagination: false,
+                navigation:true,
+                navigationText:["",""],
+                slideSpeed:1000,
+                autoPlay:true
+            });
+        });
+    </script>
 
     <!-- testimonials ends -->
 
