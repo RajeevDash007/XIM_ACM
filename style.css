@@ -1595,9 +1595,9 @@ a:hover .fa-linkedin-in {
   position:absolute;
   width:100%;
   height:100%;
-  background-color: rgb(103, 103, 245);
+  background-color: var(--secondayColor);
   transition:1s;
-  
+  border-bottom: white;
   z-index:1;
   padding:10px;
 }
@@ -1653,11 +1653,15 @@ a:hover .fa-linkedin-in {
 .about-card .about-card-content .back .about-des{
   font-family: "Alkatra", cursive;
   background-color: white;
-  font-size: 80%;
+  font-size: 115%;
   padding: 1rem 0.5rem;
 }
 
-
+@media screen and (max-width: 700px){
+  .about-card .about-card-content .back .about-des{
+    font-size: 90%;
+  }
+}
 
 
 
