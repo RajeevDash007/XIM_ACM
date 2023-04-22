@@ -35,7 +35,14 @@ showSocial("TOGGLE14", "SOCIAL14")
 showSocial("TOGGLE15", "SOCIAL15")
 showSocial("TOGGLE16", "SOCIAL16")
 showSocial("TOGGLE17", "SOCIAL17")
-
-
-
-  
+showSocial("TOGGLE18", "SOCIAL18")
+showSocial("TOGGLE19", "SOCIAL19")
+showSocial("TOGGLE20", "SOCIAL20")
+showSocial("TOGGLE21", "SOCIAL21")
+showSocial("TOGGLE22", "SOCIAL22")
+showSocial("TOGGLE23", "SOCIAL23")
+showSocial("TOGGLE24", "SOCIAL24")
+showSocial("TOGGLE25", "SOCIAL25")
+showSocial("TOGGLE26", "SOCIAL26") 
+showSocial("TOGGLE27", "SOCIAL27") 
+showSocial("TOGGLE2A", "SOCIAL2A")
