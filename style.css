@@ -2616,6 +2616,35 @@ img{
      }
     }
 
+
+    .button {
+      outline: none;
+      height: 40px;
+      text-align: center;
+      width: 130px;
+      border-radius: 40px;
+      background: #fff;
+      border: 2px solid var(--primaryColor);
+      color: var(--primaryColor);
+      letter-spacing: 1px;
+      text-shadow: 0;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .button:hover {
+      color: white;
+      background: var(--primaryColor);
+    }
+    .button:active {
+      letter-spacing: 2px;
+    }
+    .button:after {
+      content: "SUBMIT";
+    }
+
+ 
     
 
   /*----------Contact Us Ends--------------*/
