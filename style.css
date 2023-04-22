@@ -315,7 +315,7 @@ nav .menu{
 
 .menu ul a:focus{
     outline: none;
-      transform: scale(0.95);
+      transform: scale(0.6);
       box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px 0 rgba(0,0,0,.1) inset, -4px -4px 10px rgba(255,255,255,1) inset;
 }
 
