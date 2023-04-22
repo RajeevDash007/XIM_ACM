@@ -176,6 +176,14 @@ body.dark .events-slider__title {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
  }
+
+ body.dark .subHeadingText{
+  color: white;
+ }
+
+ body.dark .description{
+  color: rgb(187, 180, 180);
+ }
 .checkbox {
   opacity: 0;
   position: absolute;
