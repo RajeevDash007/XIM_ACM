@@ -12,6 +12,9 @@
     padding: 0;
 }
 
+img {
+  pointer-events: none;
+}
 
 /* pre loader style starts */
 .loading{
