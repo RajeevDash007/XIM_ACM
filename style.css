@@ -1291,11 +1291,11 @@ svg text {
 
 
 .card_logo{
-  padding-top:110px;
+  padding-top:150px;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 700px){
@@ -1303,8 +1303,12 @@ svg text {
     width: 92%;
     
   }
+  .menu .logo{
+    width: 62%;
+  }
   .card_logo img{
-    margin-top: -20px;
+    margin-top: 20px;
+    width: 85%;
   }
   svg{
     margin-top: 5px;
@@ -1382,7 +1386,7 @@ a:hover .fa-linkedin-in {
 @media screen and (max-width: 700px){
 
   .home_social-media{
-    
+    padding-top: 100px;
   }
   .home_social-media a{
     height: 40px;
