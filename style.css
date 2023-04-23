@@ -12,7 +12,12 @@
     padding: 0;
 }
 
-
+input[type="text"] {
+  max-width: 200px; /* Set a max-width for the input box */
+  word-wrap: break-word; /* Allow long words to break */
+  white-space: pre-wrap; /* Preserve line breaks */
+  overflow-wrap: break-word; /* Fallback for browsers that don't support word-wrap */
+}
 /* pre loader style starts */
 .loading{
   background-color: var(--bg);
@@ -298,26 +303,26 @@ nav .menu{
 	font-weight:400;
 	display:inline-flex;
 	padding:10px 12px;
-	box-shadow: -3px -3px 7px #ffffff,
+	/* box-shadow: -3px -3px 7px #ffffff,
             3px 3px 5px #ceced1;
 	position:relative;
 	transition: color 0.2s ease-out, transform 0.2s ease-out;
-       border-radius:10px 10px; 
+       border-radius:10px 10px;  */
 	
 }
 
 
 .menu ul a:hover{
 	color:var(--secondayColor);
-    transform: scale(1.05);
-    box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1);
+    /* transform: scale(1.05);
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1); */
 }
 
-.menu ul a:focus{
+/* .menu ul a:focus{
     outline: none;
       transform: scale(0.6);
       box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px 0 rgba(0,0,0,.1) inset, -4px -4px 10px rgba(255,255,255,1) inset;
-}
+} */
 
 
 nav label.btn{
@@ -1678,7 +1683,7 @@ a:hover .fa-linkedin-in {
 
 .events{
     height: 100%;
-    font-family: var(--headingFont);
+    font-family: var(--normalFont);
     background-image: var(--eventsBackground);
     padding-bottom: 100px;
 }
@@ -1869,14 +1874,15 @@ a:hover .fa-linkedin-in {
   .events-slider__title {
     font-size: 24px;
     font-weight: 700;
-    color: #0d0925;
+    color: var(--primaryColor);
     margin-bottom: 20px;
   }
   .events-slider__text {
-    color: #4e4a67;
+    color: rgb(123, 120, 120);
     margin-bottom: 30px;
     line-height: 1.5em;
     font-size: 80%;
+    font-weight: 500;
   }
   .events-slider__button {
     display: inline-flex;
@@ -2666,7 +2672,7 @@ footer
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	
+	font-family: var(--normalFont);
 }
 
 footer .social_icon,
