@@ -166,7 +166,7 @@ body.dark .events-slider__code{
   color:#b1b0b0;
 }
 body.dark .events-slider__title {
-  color:white;
+  color:var(--primaryColor);
 }
  body.dark .events-slider__text{
   color:rgb(230, 227, 227);
