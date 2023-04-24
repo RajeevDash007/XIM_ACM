@@ -34,6 +34,15 @@
       margin-top: -10px;
       animation: animate 32s ease-in-out infinite;
     }
+    .home_background::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
    
     @keyframes animate{
       0%,100%{
@@ -612,7 +621,7 @@ $(document).ready(function(){
                 </div>
 
                 <h3 class="team--name" >AYUSH</h3>
-                <span class="team--profession">CHAIRMAN</span>
+                <span class="team--profession">CHAIR</span>
 
                 <div class="team--social" id="team1-social">
                     <div class="team--social-control">
@@ -649,7 +658,7 @@ $(document).ready(function(){
                 </div>
 
                 <h3 class="team--name">ABHILASHA</h3>
-                <span class="team--profession">VICE CHAIRMAN</span>
+                <span class="team--profession">VICE CHAIR</span>
 
                 <div class="team--social" id="team2-social">
                     <div class="team--social-control">
