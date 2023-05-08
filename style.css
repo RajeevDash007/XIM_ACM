@@ -184,6 +184,17 @@ body.dark .events-slider__title {
  body.dark .description{
   color: rgb(187, 180, 180);
  }
+
+ body.dark .event-description{
+  color: white;
+ }
+ body.dark .event-left{
+  background-color: var(--secondayColor);
+ }
+
+ body.dark .event{
+  box-shadow: 0 4px 16px -8px rgba(216, 216, 216, 0.895);
+ }
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -1243,7 +1254,6 @@ a {
 /*home styles*/
 
 
-
 svg {
     font-family: 'Russo One', sans-serif;
     position: absolute; 
@@ -1680,7 +1690,7 @@ a:hover .fa-linkedin-in {
     height: 100%;
     font-family: var(--normalFont);
     background-image: var(--eventsBackground);
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 .website_heading{
     padding: 80px;
@@ -1697,6 +1707,7 @@ a:hover .fa-linkedin-in {
 .starting_letter{
     color: var(--secondayColor);
 }
+
 
 .events-slider {
     width: 95%;
@@ -1934,6 +1945,9 @@ a:hover .fa-linkedin-in {
     .events{
       margin-bottom: -250px;
     }
+    .past_events{
+      margin-bottom: 100%;
+    }
   }
   .events-slider__pagination .swiper-pagination-bullet {
     width: 11px;
@@ -1992,6 +2006,150 @@ a:hover .fa-linkedin-in {
       display: none;
     }
   }
+
+  ul{
+    list-style: none;
+  }
+  .events_filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(237,237,237,0.6);
+    flex-wrap:wrap;
+    margin: 10px;
+    width: 30%;
+  left: 35%;
+    position: relative;
+    margin-top: -2%;
+    margin-bottom: 5%;
+  }
+  
+  .events_filter li{
+    margin:10px;
+    padding: 5px 20px;
+    color:#9b9b9b;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .events_filter_active{
+    background-color: #aee6f7;
+    color: black;
+  }
+
+
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 10px 0;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .time_loc{
+    display: flex;
+    gap: 10px;
+  }
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+      width: 95%;
+    }
+    .event-container{
+      margin-bottom:110%;
+      margin-left: 5%;
+    }
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+    .events_filter{
+      display: flex;
+      width: 500px;
+      left:-15%;
+    }
+  }
+
+
+
+
 /*projects styles*/
 
 #projects{
@@ -2013,6 +2171,7 @@ ul{
   border: 1px solid rgba(237,237,237,0.6);
   flex-wrap:wrap;
   margin: 20px;
+  
 }
 
 .projects_filter li{
