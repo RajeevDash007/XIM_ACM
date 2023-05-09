@@ -22,7 +22,8 @@ body{
   ::-webkit-scrollbar-thumb {
     background: linear-gradient(to right bottom, #fd8721, #c34915);
   }
-  
+ 
+  /* Webpage Layout */
 
 .header img{
    
@@ -250,7 +251,7 @@ ul.tl li .timestamp{
 }
 
 
-
+/* Ranking Table style */
 
 
 main.table {
@@ -347,9 +348,7 @@ thead th {
     text-transform: capitalize;
 }
 
-/* tbody tr:nth-child(even) {
-    background-color: #c96f2f6a;
-} */
+
 
 tbody tr {
     --delay: .1s;
