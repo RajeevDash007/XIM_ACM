@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./event_details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./event_details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.1.0/jssor.slider.min.js"></script>
+
     <title>Technical Writing | ACM XIM</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <img src="https://i.ibb.co/30XprFr/644960e114ea0-impulse-2k23.webp">
+      <img src="https://i.ibb.co/30XprFr/644960e114ea0-impulse-2k23.webp" />
     </div>
-   
-      <div class="row">
-        <div class="lc">
-          <div class="card">
-            <div class="image-card" style="background-image: url('https://i.pinimg.com/originals/d1/7d/e1/d17de177f36718c749d89b6a4e9831e6.jpg')">
+
+    <div class="row">
+      <div class="lc">
+        <div class="card">
+          <div
+            class="image-card"
+            style="
+              background-image: url('https://i.pinimg.com/originals/d1/7d/e1/d17de177f36718c749d89b6a4e9831e6.jpg');
+            "
+          ></div>
+          <div class="content-info">
+            <h1>Pen to Pixels</h1>
+            <div class="timing">
+              <i class="fas fa-clock" style="color: #fb8500"></i>16 May,10:00am
             </div>
-            <div class="content-info">  
-              <h1>Pen to Pixels</h1>
-              <div class="timing"><i class="fas fa-clock" style="color:#fb8500;"></i>16 May,10:00am</div>
-              <div class="location"><i class="fas fa-map-marker-alt" style="color:#fb8500;"></i>Online</div>
-              <div class="location"><i class="fas fa-award" style="color:#fb8500;"></i>Certificates and Trophy</div>
+            <div class="location">
+              <i class="fas fa-map-marker-alt" style="color: #fb8500"></i>Online
             </div>
-          </div>
-          <div class="card">
-            <div class="content-info">  
-              <h1>Rules and Regulations</h1>
-              <div class="history-tl-container">
-                <ul class="tl">
-                  <li class="tl-item" ng-repeat="item in retailer_history">
-                    
-                    <div class="item-title">Start from Shire</div>
-                    <div class="item-detail">Don't forget the ring</div>
-                  </li>
-                  <li class="tl-item" ng-repeat="item in retailer_history">
-                    
-                    <div class="item-title">Kill some Orcs</div>
-                    <div class="item-detail">Don't enter the caves!!</div>
-                  </li>
-                  <li class="tl-item" ng-repeat="item in retailer_history">
-                    
-                    <div class="item-title">Throw that goddamn ring in the lava</div>
-                    <div class="item-detail">Also, throw that Gollum too</div>
-                  </li>
-              
-                </ul>
-              
-              </div>
+            <div class="location">
+              <i class="fas fa-award" style="color: #fb8500"></i>Certificates
+              and Trophy
             </div>
           </div>
         </div>
-        <div class="rc">
-          <!-- <div class="card" style="background-color:cornflowerblue;"> -->
-          <div class="card">
-            <!-- <main class="table">
+        <div class="card">
+          <div class="content-info">
+            <h1>Rules and Regulations</h1>
+            <div class="history-tl-container">
+              <ul class="tl">
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">Start from Shire</div>
+                  <div class="item-detail">Don't forget the ring</div>
+                </li>
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">Kill some Orcs</div>
+                  <div class="item-detail">Don't enter the caves!!</div>
+                </li>
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">
+                    Throw that goddamn ring in the lava
+                  </div>
+                  <div class="item-detail">Also, throw that Gollum too</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc">
+        <!-- <div class="card" style="background-color:cornflowerblue;"> -->
+        <div class="card">
+          <!-- <main class="table">
               <section class="table__header">
                   <h1>RESULTS (TOP 5)</h1>
                 
@@ -111,14 +126,173 @@
                   </table>
               </section>
           </main> -->
-          </div>
-          
-          
         </div>
       </div>
-   
-      
-      
-      
-</body>
+    </div>
+
+    <!-- Image Slider -->
+    <section class="wow fadeIn example no-padding no-transition slider-top">
+      <div style="min-height: 50px">
+        <!-- Jssor Slider Begin -->
+
+        <div
+          id="slider1_container"
+          style="
+            visibility: hidden;
+            position: relative;
+            margin: 0 auto;
+            top: 0px;
+            left: 0px;
+            width: 1300px;
+            height: 500px;
+            overflow: hidden;
+          "
+        >
+          <!-- Loading Screen -->
+          <div
+            data-u="loading"
+            class="jssorl-009-spin"
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              background-color: rgba(0, 0, 0, 0.7);
+            "
+          >
+            <img
+              style="
+                margin-top: -19px;
+                position: relative;
+                top: 50%;
+                width: 38px;
+                height: 38px;
+              "
+              src="https://www.jssor.com/theme/svg/loading/static-svg/spin.svg"
+            />
+          </div>
+
+          <!-- Slides Container -->
+          <div
+            data-u="slides"
+            style="
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 1300px;
+              height: 500px;
+              overflow: hidden;
+            "
+          >
+            <div>
+              <img
+                data-u="image"
+                src="/EventDetails/event_images/projects_1.jpeg"
+                class="slider"
+              />
+            </div>
+            <div>
+              <img
+                data-u="image"
+                src="/EventDetails/event_images/hackathon_image.jpg"
+                class="slider"
+              />
+            </div>
+            <div>
+              <img
+                data-u="image"
+                src="/EventDetails/event_images/hackathon.jpeg"
+                class="slider"
+              />
+            </div>
+          </div>
+
+          <!--#region Bullet Navigator Skin Begin -->
+          <!-- Help: https://www.jssor.com/development/slider-with-bullet-navigator.html -->
+          <style></style>
+          <div
+            data-u="navigator"
+            class="jssorb031"
+            style="position: absolute; bottom: 12px; right: 12px"
+            data-autocenter="1"
+            data-scale="0.5"
+            data-scale-bottom="0.75"
+          >
+            <div data-u="prototype" class="i" style="width: 16px; height: 16px">
+              <svg
+                viewBox="0 0 16000 16000"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+              </svg>
+            </div>
+          </div>
+          <!--#endregion Bullet Navigator Skin End -->
+
+          <!--#region Arrow Navigator Skin Begin -->
+          <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+          <style></style>
+          <div
+            data-u="arrowleft"
+            class="jssora051"
+            style="width: 55px; height: 55px; top: 0px; left: 25px"
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-left="0.75"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="11040,1920 4960,8000 11040,14080 "
+              ></polyline>
+            </svg>
+          </div>
+          <div
+            data-u="arrowright"
+            class="jssora051"
+            style="width: 55px; height: 55px; top: 0px; right: 25px"
+            data-autocenter="2"
+            data-scale="0.75"
+            data-scale-right="0.75"
+          >
+            <svg
+              viewBox="0 0 16000 16000"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <polyline
+                class="a"
+                points="4960,1920 11040,8000 4960,14080 "
+              ></polyline>
+            </svg>
+          </div>
+          <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
+      </div>
+    </section>
+    <script src="/EventDetails/event.js"></script>
+  </body>
 </html>
