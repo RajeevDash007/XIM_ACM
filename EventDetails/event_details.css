@@ -160,7 +160,7 @@ margin: 5px;
 }
 
 .content-info{
-    padding: 10px;
+    padding: 20px;
     line-height: 200%;
     margin-top: -2%;
 }
@@ -185,9 +185,10 @@ margin: 5px;
 
 @media screen and (max-width:500px){
     .content-info{
-        font-size: 80%;
+        font-size: 65%;
         line-height: 250%;
     }
+    
 }
 
 
@@ -235,21 +236,22 @@ margin: 5px;
     transition: all 1000ms ease-in-out;
 }
 ul.tl li .item-title{
+    font-size: 20px;
 }
 ul.tl li .item-detail{
     color:rgba(0,0,0,0.5);
-    font-size:12px;
+    font-size:15px;
     margin-top: -2%;
 }
-ul.tl li .timestamp{
-    color: #8D8D8D;
-    position: absolute;
-  width:100px;
-    left: -50%;
-    text-align: right;
-    font-size: 12px;
-}
 
+@media screen and (max-width:500px){
+    ul.tl li .item-detail{
+        font-size: 150%;
+    }
+    ul.tl li .item-title{
+        font-size: 150%;
+    }
+}
 
 /* Ranking Table style */
 
