@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./event_details.css" />
     <link
       rel="stylesheet"
@@ -45,7 +46,7 @@
         </div>
         <div class="card">
           <div class="content-info">
-            <h1>Rules and Regulations</h1>
+            <h1>Instructions and Guidelines</h1>
             <div class="history-tl-container">
               <ul class="tl">
                 <li class="tl-item" ng-repeat="item in retailer_history">
@@ -62,11 +63,30 @@
                   </div>
                   <div class="item-detail">Also, throw that Gollum too</div>
                 </li>
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">
+                    Throw that goddamn ring in the lava
+                  </div>
+                  <div class="item-detail">Also, throw that Gollum too</div>
+                </li>
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">
+                    Throw that goddamn ring in the lava
+                  </div>
+                  <div class="item-detail">Also, throw that Gollum too</div>
+                </li>
+                <li class="tl-item" ng-repeat="item in retailer_history">
+                  <div class="item-title">
+                    Throw that goddamn ring in the lava
+                  </div>
+                  <div class="item-detail">Also, throw that Gollum too</div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+     
       <div class="rc">
         <!-- <div class="card" style="background-color:cornflowerblue;"> -->
         <div class="card">
@@ -247,6 +267,29 @@
         </div>
       </div>
     </div>
+    <script>
+      $(window).scroll(function() {
+        var container = $(".rc");
+        var header = $(".header");
+        var viewportWidth = $(window).width();
+        var mobileBreakpoint = 768; // Adjust this value as needed
+    
+        if (viewportWidth >= mobileBreakpoint) {
+          var containerTop = container.offset().top;
+          var headerBottom = header.offset().top + header.outerHeight();
+    
+          if ($(window).scrollTop() >= headerBottom) {
+            var marginTop = Math.max(0, $(window).scrollTop() - headerBottom);
+            container.css("margin-top", marginTop + "px");
+          } else {
+            container.css("margin-top", "0");
+          }
+        } else {
+          // Reset container position for mobile devices
+          container.css("margin-top", "0");
+        }
+      });
+    </script>
     
     <!-- Image Slider -->
           <!-- <section class="wow fadeIn example no-padding no-transition slider-top">
