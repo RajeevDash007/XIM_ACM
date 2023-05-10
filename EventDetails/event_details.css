@@ -129,7 +129,6 @@ margin: 5px;
 
 .row {
   display: flex;
-
 }
 
 @media (max-width: 500px) {
