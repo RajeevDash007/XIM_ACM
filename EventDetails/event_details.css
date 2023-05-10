@@ -560,10 +560,12 @@ tbody tr.hide td img {
         position: absolute;
         width: max-content;
         height: inherit;
-        font-size: 40px;
-        color: #ffffff;
+        font-size: 25px;
+        color: #000000;
         opacity: 0;
         transition: 0.3s;
+        margin-left: 19rem;
+        margin-top: 15px;
       }
       
       .c-form {
