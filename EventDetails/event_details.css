@@ -127,23 +127,6 @@ margin: 5px;
 }
 
 
-.row {
-  display: flex;
-
-}
-
-@media (max-width: 500px) {
-  .row {
-    flex-direction: column;
-  }
-  .lc {
-    order: 2;
-  }
-  
-  .rc {
-    order: 1;
-  }
-}
 
 
 
