@@ -530,21 +530,48 @@ tbody tr.hide td img {
         color: #565656;
       }
 
+      .c-checkbox:nth-of-type(5):checked ~ .c-form__progress {
+        /* width: calc(100vw / 3); */
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(4) {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(4) .c-form__border {
+        width: 0;
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) {
+        visibility: visible;
+        opacity: 1;
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) .c-form__border {
+        width: 100%;
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__border,
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__next {
+        color: #ff0033;
+      }
+      .c-checkbox:nth-of-type(5):checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) .c-form__input:required:valid ~ .c-form__next {
+        pointer-events: initial;
+        color: #565656;
+      }
+
       #finish:checked ~ .c-formContainer .c-form {
         transition: opacity 0.2s 0.1s, transform 0.3s;
         opacity: 0;
         transform: translateX(50%) scaleX(0);
       }
-      #finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(4) {
+      #finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) {
         transition: 0s;
         visibility: hidden;
         opacity: 0;
       }
-      #finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(4) .c-form__border {
+      #finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(5) .c-form__border {
         width: 0;
       }
       #finish:checked ~ .c-formContainer .c-welcome {
         opacity: 1;
+        
       }
       
       .c-formContainer {
@@ -588,6 +615,10 @@ tbody tr.hide td img {
         align-items: center;
         justify-content: center;
       }
+      .s__option{
+        margin-left: 3rem;
+      }
+      
       
       .c-form__toggleIcon {
         display: inline-block;

@@ -131,6 +131,8 @@
           <input class="c-checkbox" type="checkbox" id="progress2" />
           <input class="c-checkbox" type="checkbox" id="progress3" />
           <input class="c-checkbox" type="checkbox" id="progress4" />
+          <input class="c-checkbox" type="checkbox" id="progress5" />
+          
           <input class="c-checkbox" type="checkbox" id="finish" />
           <div class="c-form__progress"></div>
 
@@ -180,10 +182,11 @@
               <div class="c-form__group">
                 <label class="c-form__label" for="fpass">
                   <input
-                    type="number"
+                    type="text"
                     id="fpass"
                     class="c-form__input"
                     placeholder=" "
+                    pattern="[0-9]+"
                     required
                   />
 
@@ -206,14 +209,33 @@
                     pattern="[\w\s]+"
                     required
                   />
-                  <label class="c-form__next" for="finish" role="button">
+                  <label class="c-form__next" for="progress5" role="button">
                     <span class="c-form__nextIcon"></span>
                   </label>
                   <span class="c-form__groupLabel">Enter your college name.</span>
                   <b class="c-form__border"></b>
                 </label>
               </div>
-              
+
+              <div class="c-form__group">
+                <label class="c-form__label" for="submit">
+                  <input
+                    type="submit"
+                    id="submit"
+                    class="c-form__input s__option"
+                    placeholder=" "
+                    pattern=""
+                    required
+                  />
+
+                  <label class="c-form__next" for="finish" role="button">
+                    <!-- <span class="c-form__nextIcon"></span> -->
+                  </label>
+
+                  <span class="c-form__groupLabel"></span>
+                  
+                </label>
+              </div>
 
               <label class="c-form__toggle" for="start">
                 Register<span class="c-form__toggleIcon"></span>
