@@ -594,7 +594,7 @@ tbody tr.hide td img {
         
       }
       .popup{
-        width: 400px;
+        width: 600px;
         background: #fff;
         border-radius: 6px;
         position: absolute;
@@ -613,19 +613,19 @@ tbody tr.hide td img {
         transform: translate(-50%, -50%) scale(1);
       }
       .popup h2{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 800;
         margin: 30px 0 10px;
       }
       .popup button{
-          width: 20%;
+          width: 50%;
           margin-top: 10px;
           padding: 10px 0;
           background: #3b9df4;
           color: #fff;
           border: 0;
           outline: none;
-          font-size: 12px;
+          font-size: 18px;
           border-radius: 4px;
           cursor: pointer;
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
