@@ -672,6 +672,15 @@ tbody tr.hide td img {
         align-items: center;
         justify-content: center;
       }
+
+      @media screen and (max-width:500px){
+        .c-form{
+          margin-right:73%;
+        }
+        .c-form__group{
+          max-width: 95%;
+        }
+      }
       .s__option{
         margin-left: 3rem;
       }
