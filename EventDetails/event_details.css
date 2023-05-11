@@ -260,7 +260,8 @@ ul.tl li .item-title{
 ul.tl li .item-detail{
     color:rgba(0,0,0,0.5);
     font-size:15px;
-    margin-top: -2%;
+    margin-top: 0;
+    
 }
 
 @media screen and (max-width:500px){
