@@ -158,7 +158,7 @@
 
           <div class="c-formContainer">
             <div class="c-welcome">Registration sucessfull!</div>
-            <form class="c-form" action="" >
+            <form class="c-form" action="test.php" method="POST" >
               <div class="c-form__group">
                 <label class="c-form__label" for="name">
                   <input
@@ -240,6 +240,7 @@
               <div class="c-form__group" >
                 <label class="c-form__label" for="submit" >
                   <input
+                    onclick="openPopup()"
                     type="submit"
                     id="submit"
                     class="c-form__input s__option"
@@ -256,6 +257,31 @@
                   
                 </label>
               </div>
+
+              <div class="popup" id="popup">
+                  <h2>Registration sucessfull!</h2>
+                  <button type="button" onclick="closePopup()">OK</button>
+              </div>
+              <script>
+                let popup = document.getElementById("popup");
+                
+
+                function openPopup(){
+                  popup.classList.add("open-popup");
+
+                  let okBtn = popup.querySelector("button");
+                  okBtn.addEventListener("click", function() {
+    
+                  location.reload();
+                  });
+                  }
+                
+                function closePopup(){
+                  popup.classList.remove("open-popup");
+                }
+              </script>
+
+              
 
               <label class="c-form__toggle" for="start">
                 Register<span class="c-form__toggleIcon"></span>
