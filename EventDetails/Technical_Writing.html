@@ -183,13 +183,8 @@
           <div class="c-form__progress"></div>
 
           <div class="c-formContainer">
-
             <div class="c-welcome">Registration sucessfull!</div>
             <form class="c-form" action="events.php" method="POST" >
-
-            <div class="c-welcome">Registration successful!</div>
-            <form class="c-form" action="" >
-
               <div class="c-form__group">
                 <label class="c-form__label" for="name">
                   <input
@@ -261,7 +256,7 @@
                     class="c-form__input"
                     placeholder=" "
                     pattern="[\w\s]+"
-                    name="college-name"
+                    name="college"
                     required
                   />
                   <label class="c-form__next" for="progress5" role="button">
@@ -275,6 +270,7 @@
               <div class="c-form__group" >
                 <label class="c-form__label" for="submit" >
                   <input
+                    onclick="openPopup()"
                     type="submit"
                     id="submit"
                     class="c-form__input s__option"
@@ -292,7 +288,6 @@
                   
                 </label>
               </div>
-
 
               <!-- <div class="popup" id="popup">
                   <h2>Registration sucessfull!</h2>
@@ -318,7 +313,6 @@
               </script> -->
 
               
-
 
               <label class="c-form__toggle" for="start">
                 Register<span class="c-form__toggleIcon"></span>
