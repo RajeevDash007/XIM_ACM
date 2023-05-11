@@ -16,7 +16,7 @@
 
     mysqli_close($connection);
 
-    header('location:Technical_Writing.html');
+    header('location:popup.html');
     }else{
         echo 'something went wrong try again'; 
     }

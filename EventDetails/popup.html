@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration complete!</title>
+    <link rel="stylesheet" href="./event_details.css" />
+</head>
+
+<body>
+<div class="popup open-popup" id="popup">
+<h2>Registration sucessfull!</h2>
+<button type="button" onclick="hrefFunction()">OK</button>
+</div>
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+popup.classList.add("open-popup");
+}
+
+function closePopup() {
+popup.classList.remove("open-popup");
+}
+
+function hrefFunction(){
+        window.location.href="Technical_Writing.html";
+    }
+</script>
+</body>
